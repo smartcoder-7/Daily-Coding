@@ -2,6 +2,7 @@
 // a -> 1, b -> 2 ... z -> 26, given string of numbers as input data, how many way are there in decoding to the string?
 // solution('12') => 'ab', or 'l' solution('01') => 0
 
+//Time complexity => O(2^n)
 function helper(data, k) {
   if (k === 0) return 1;
   let s = data.length - k;
@@ -19,6 +20,7 @@ function solution(input) {
   return helper(input, input.length);
 }
 
+//Time complexity => O()
 function helperWithDP(data, k, memo) {
   if (k === 0) return 1;
   let s = data.length - k;
